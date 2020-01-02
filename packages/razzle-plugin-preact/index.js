@@ -1,8 +1,11 @@
 'use strict';
 
 module.exports = function modify(config) {
-  console.log(
-    'Not yet implemented. Help out at https://github.com/jaredpalmer/razzle'
-  );
+  config.resolve.alias = Object.assign({}, config.resolve.alias, {
+    "react": "preact/compat",
+    "react-dom/test-utils": "preact/test-utils",
+    "react-dom": "preact/compat",
+  });
+
   return config;
 };

@@ -2,5 +2,9 @@
   "name": "razzle-plugin-preact",
   "version": "2.2.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "preact": "^10.1.1",
+    "preact-render-to-string": "^5.1.3"
+  }
 }
